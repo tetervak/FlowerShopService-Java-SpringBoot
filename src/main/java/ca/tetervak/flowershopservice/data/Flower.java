@@ -15,8 +15,6 @@ public class Flower {
 
     private String image = null;
 
-    private String wiki = "";
-
     public Flower() {
     }
 
@@ -25,15 +23,13 @@ public class Flower {
             String label,
             Double price,
             String description,
-            String image,
-            String wiki
+            String image
     ) {
         this.id = id;
         this.label = label;
         this.price = price;
         this.description = description;
         this.image = image;
-        this.wiki = wiki;
     }
 
     public String getId() {
@@ -53,7 +49,7 @@ public class Flower {
     }
 
     public double getPrice() {
-        return price.doubleValue();
+        return price;
     }
 
     public void setPrice(Double price) {
@@ -74,13 +70,5 @@ public class Flower {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public String getWiki() {
-        return wiki;
-    }
-
-    public void setWiki(String wiki) {
-        this.wiki = wiki;
     }
 }
